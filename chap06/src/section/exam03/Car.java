@@ -15,10 +15,10 @@ public class Car {
 	// 다른생성자란 매개변수를 가지는 생성자를 말한다.
 	
 	// 매개변수가 있는 생성자
-	public Car(String c, String m, int msd) {
+	public Car(String c, String m, int ms) {
 		company = c;
 		model = m;
-		maxSpeed = msd;
+		maxSpeed = ms;
 
 	}
 }
