@@ -7,18 +7,37 @@ public class StringCalculator {
 	}
 	
 	int add(String a, String b) {
-		int num1 = Integer.parseInt(a);
-		int num2 = Integer.parseInt(b);
+		int num1 = 0;
+		int num2 = 0;
+		try {
+			num1 = Integer.parseInt(a);
+			num2 = Integer.parseInt(b);			
+		} catch (NumberFormatException e) {
+			System.out.println("올바른 값을 입력하세요");
+			return 0;
+		}
 		return num1 + num2;
 	}
 	
 	int add(String a, int b) {
-		int num = Integer.parseInt(a);
+		int num = 0;
+		try {
+			num = Integer.parseInt(a);
+		} catch (NumberFormatException e) {
+			System.out.println("올바른 값을 입력하세요");
+			return 0;
+		}
 		return num+b;
 	}
 	
 	int add(int a, String b) {
-		int num = Integer.parseInt(b);
+		int num = 0;
+		try {
+			num = Integer.parseInt(b);			
+		} catch (NumberFormatException e) {
+			System.out.println("올바른 값을 입력하세요");
+			return 0;
+		}
 		return a+num;
 	}
 }
