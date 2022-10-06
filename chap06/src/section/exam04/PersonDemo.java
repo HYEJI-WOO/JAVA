@@ -18,6 +18,13 @@ public class PersonDemo {
 		Person p3 = new Person(3, "ȫ�浿", "22222");
 		p3.print();
 		
+		Person p4 = new Person(3, "ȫ�浿", "22222");
+		p4.print();
+		
+		System.out.println(p3==p4);
+		System.out.println(p3.equals(p4));
+		
+		
 		
 	}
 
