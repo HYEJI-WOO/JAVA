@@ -6,7 +6,7 @@ public class Television2 {
 	static String info; // static 필드 공유
 	String color; // instance 필드 독립
 	
-	static {
+	static { // 정적 블록
 		company = "삼성";
 		model = "LCD";
 		info = company + "_" + model;
@@ -19,3 +19,4 @@ public class Television2 {
 		System.out.println(info);
 	}
 }
+
