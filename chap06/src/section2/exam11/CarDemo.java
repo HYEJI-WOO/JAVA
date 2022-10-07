@@ -10,6 +10,16 @@ public class CarDemo {
 		car.setStop(true);
 		System.out.println(car.getSpeed());
 		System.out.println(car.isStop());
+		
+		// 음수값 설정
+		car.setSpeed(-100);
+		System.out.println("속도 : " + car.getSpeed());
+		
+		// 200 초과 설정
+		car.setSpeed(350);
+		System.out.println("속도 : " + car.getSpeed());
+		
+		
 	}
 
 }

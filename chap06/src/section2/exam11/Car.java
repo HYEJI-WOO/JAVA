@@ -28,6 +28,18 @@ public class Car {
 	
 	// setter 세터 메소드
 	public void setSpeed(int speed) {
+		if(speed<0) {
+			System.out.println();
+			System.out.println("음수 값 설정 불가능");
+			this.speed = 50;
+			return;
+		}
+		if(speed>200) {
+			System.out.println();
+			System.out.println("200초과 금지");
+			this.speed = 200;
+			return;
+		}
 		this.speed = speed;
 	}
 	public void setStop(boolean stop) {
