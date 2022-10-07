@@ -3,15 +3,15 @@ package section2.exam13;
 import java.util.Date;
 
 public class BoardVO {
-	int id; // 게시글 번호
-	String title; // 제목
-	String contents; // 내용
-	String writer; // 작성자
-	int hit;  // 조회수
-	String like; // 좋아요
-	Date regDate; // 등록일
-	Date updateDate; // 수정일
-	int replyCount; // 댓글수
+	private int id; // 게시글 번호
+	private String title; // 제목
+	private String contents; // 내용
+	private String writer; // 작성자
+	private int hit;  // 조회수
+	private String like; // 좋아요
+	private Date regDate; // 등록일
+	private Date updateDate; // 수정일
+	private int replyCount; // 댓글수
 	
 	
 	
