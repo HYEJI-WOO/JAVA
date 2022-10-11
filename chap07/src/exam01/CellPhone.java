@@ -5,7 +5,7 @@ public class CellPhone {
 	String model;
 	String color;
 	
-	void powerOn() {
+	protected void powerOn() {
 		System.out.println("Àü¿ø on");
 	}
 	void powerOff() {
