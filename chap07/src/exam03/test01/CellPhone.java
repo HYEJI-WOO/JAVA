@@ -18,7 +18,7 @@ public class CellPhone {
 	}
 	
 	public void makeAPhoneCall(String dial) {
-		if(!isPowerOn(this.power)) return;
+		if(!isPowerOn(this.power)) return; 
 		System.out.println(dial+" 번호로 전화를 겁니다.");
 	}
 	

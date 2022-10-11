@@ -20,9 +20,8 @@ public class SmartPhone extends CellPhone {
 				System.out.println(appName + " 앱을 실행합니다.");
 				return;
 			}
-			System.out.println("해당 앱이 존재하지 않습니다.");
-			return;
 		}
+		System.out.println("해당 앱이 존재하지 않습니다.");
 	}
 
 }
