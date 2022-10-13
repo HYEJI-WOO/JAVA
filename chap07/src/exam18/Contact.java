@@ -6,7 +6,6 @@ public class Contact {
 	private String phoneNumber;
 	
 	public Contact(String name, String phoneNumber) {
-		super();
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 	}
@@ -26,4 +25,10 @@ public class Contact {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
+
+	@Override
+	public String toString() {
+		return "Contact [이름 : " + name + ", 연락처 : " + phoneNumber + "]";
+	}
+	
 }
