@@ -6,12 +6,6 @@ class Parent{
 		a++;
 		System.out.print(a);
 	}
-	void run() {
-		System.out.println("누구냐?");
-	}
-	void aa() {
-		System.out.println("aa");
-	}
 }
 
 class Child extends Parent{
@@ -20,20 +14,13 @@ class Child extends Parent{
 		this.b = a;
 		System.out.print(a++);
 	}
-	void run() {
-		System.out.println("아들입니다.");
-	}
-	void bb() {
-		System.out.println("bb");
-	}
 }
 
 public class MockExam1120 {
 	public static void main(String[] args) {
-		Parent parent = new Child(1);
-		parent.aa();
-		parent.run();
+		Parent pa = new Child(5);
 		 
 	}
 
 }
+
