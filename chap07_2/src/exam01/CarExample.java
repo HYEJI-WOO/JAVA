@@ -2,7 +2,13 @@ package exam01;
 
 public class CarExample {
 	public static void main(String[] args) {
-		Car car = new Car();
+		Tire[] tires = {
+				new KumhoTire("앞왼쪽", 6),
+				new HankookTire("앞오른쪽", 2),
+				new HankookTire("뒤왼쪽", 3),
+				new KumhoTire("뒤오른쪽", 4),			
+		};
+		Car car = new Car(tires);
 		
 		for (int i = 0; i < 5; i++) {
 			// 펑크가 난 타이어 숫자 반환
