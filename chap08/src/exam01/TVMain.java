@@ -21,6 +21,13 @@ public class TVMain {
 		audio.setVolume(-10);
 		audio.setVolume(5);
 		audio.setMute(false); // 디폴트메소드
+		System.out.println();
+		
+		// RemoteControl 인터페이스
+		// Dummy 추상클래스
+		// DummyB 구현클래스
+		RemoteControl d = new DummyB();
+		Dummy d2 = new DummyB();
 	}
 
 }
