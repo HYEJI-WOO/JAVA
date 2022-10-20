@@ -2,6 +2,12 @@ package exam08;
 
 public class Calculator {
 	
+	static int field = 10;
+	
+	static void methodAA() {
+		System.out.println("스태틱메소드");
+	}
+	
 	private int plus(int x, int y) {
 		return x+y;
 	}
