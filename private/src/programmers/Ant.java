@@ -2,16 +2,21 @@ package programmers;
 
 public class Ant {
 	public static void main(String[] args) {
-		int hp = 33;
-		int result;
-		int n;
-		
-		if(hp<5) result = hp;
-		else if(hp%5 == 0) result = hp/5;
-		else if(hp/3 == 0) result = hp/5 + (hp%5)/3;
-		else result = hp/5 + (hp%5)/3 + ((hp%5)/3)%3;
-		
-		System.out.println(result);
+		int result = 0;
+        
+        for(int hp=0; hp<=1000; hp++) {
+        	int a = hp/5;
+        	int b = hp%5;
+        	if(hp>=5 | hp==3) {
+        		if(hp%5 == 0) result = a;
+        		else result = a + b/3 + b%3;
+        		System.out.println("[" + hp + "마리] " +  result);
+        	} else {
+        		result = hp;
+        		System.out.println("[" + hp + "마리] " +  result);
+        	}
+        }
+        
 	}
 
 }
