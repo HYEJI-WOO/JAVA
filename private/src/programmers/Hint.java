@@ -34,7 +34,6 @@ public class Hint {
 		
 		Arrays.sort(split);
 				
-		
 	}
 
 }
