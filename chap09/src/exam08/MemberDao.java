@@ -36,4 +36,11 @@ class Member {
 		return age;
 	}
 
+	@Override
+	public String toString() {
+		return "Member [name=" + name + ", age=" + age + "]";
+	}
+	
+	
+
 }

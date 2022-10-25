@@ -4,7 +4,7 @@ public class MemberService {
 	
 	private MemberDao memberDao;
 	
-	public MemberService(MemberDao memberDao) {
+	public MemberService(final MemberDao memberDao) {
 		this.memberDao = memberDao;
 	}
 	
