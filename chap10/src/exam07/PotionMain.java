@@ -7,6 +7,11 @@ public class PotionMain {
 		((HealPotion)healPotion).sayHello();
 		
 		Potion manaPotion = new ManaPotion();
+		manaPotion.recovery();
+		((ManaPotion)manaPotion).sayYes();
+		
+		// ClassCastException
+		ManaPotion manaPotion2 = (ManaPotion) healPotion;
 		
 	}
 
