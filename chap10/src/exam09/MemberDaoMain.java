@@ -19,7 +19,7 @@ public class MemberDaoMain {
 				// MYSQL "exam09.MemberDaoByMySQL"
 				choice = MemberDao.MYSQL_DB;
 				break;
-			} else if (choice.equals("0")) {
+			} else if (choice.equals("3")) {
 				System.out.println("종료");
 				return;
 				// 종료
@@ -31,6 +31,7 @@ public class MemberDaoMain {
 		try {
 			Class<?> clazz = Class.forName(choice);
 			MemberDao dao = (MemberDao) clazz.getDeclaredConstructor().newInstance();
+			dao.selectAll();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
