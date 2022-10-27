@@ -34,12 +34,15 @@ public class MemberDispatcher {
 					String value = requestMapping.command();
 					if(command.equals(value)) {
 						findMethod = method;
+						break;
 					}
 				}
+			}
 				if(findMethod!=null) {
 					findMethod.invoke(controller);
+				} else {
+					System.out.println("올바른 값을 입력하세요");
 				}
-			}
 			
 		} // while end
 		
