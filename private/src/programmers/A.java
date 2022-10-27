@@ -1,18 +1,17 @@
 package programmers;
 
+import java.util.*;
+
 public class A {
 	public static void main(String[] args) {
-		int n = 123;
-		int sum = 0;
-		String str = n + "";
-		String[] arr = str.split("");
+		String my_string = "people";
+		String result = "";
 		
-		for(int i=0; i<arr.length; i++) {
-			sum += Integer.parseInt(arr[i]);
+		for(int i=0; i<my_string.length(); i++) {
+			if(my_string.indexOf(my_string.charAt(i)) == i) {
+				result += my_string.charAt(i);
+			}
 		}
-		
-		System.out.println(sum);
+		System.out.println(result);
 	}
-	
-
 }
