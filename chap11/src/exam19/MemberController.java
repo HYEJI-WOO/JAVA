@@ -10,4 +10,12 @@ public class MemberController {
 	public void proceedFindById() {
 		System.out.println("번호로 조회");
 	}
+	@RequestMapping(command="hello")
+	public void hell() {
+		System.out.println("Hello!");
+	}
+	@RequestMapping(command="3")
+	public void findByName() {
+		System.out.println("이름으로 회원찾기");
+	}
 }
