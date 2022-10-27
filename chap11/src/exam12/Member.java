@@ -25,7 +25,7 @@ public class Member {
 	
 	@Override
 	public int hashCode() {
-		return this.id; // 객체의 고유값
+		return Objects.hash(id,name); // 객체의 고유값
 	}
 	
 	
