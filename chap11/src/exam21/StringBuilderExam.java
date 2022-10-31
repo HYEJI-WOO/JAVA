@@ -29,6 +29,9 @@ public class StringBuilderExam {
 		// 총 문자 수 얻기
 		System.out.println(sb.length());
 		
+		// 문자열 뒤집기
+		System.out.println(sb.reverse());
+		
 	}
 
 }
