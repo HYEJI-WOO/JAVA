@@ -16,6 +16,10 @@ public class StringDemo10 {
 		
 		String str5 = '가'+"";
 		String valueOf5 = String.valueOf(str5);
+		
+		String test = "       "; // 공백문자
+		System.out.println(test.isEmpty()); // 공백문자를 요소로 인정함
+		System.out.println(test.isBlank()); // 공백문자를 요소로 인정하지 않음
 	}
 
 }
