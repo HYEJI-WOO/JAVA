@@ -2,7 +2,7 @@ package exam20;
 
 import java.util.Arrays;
 
-public class StringDemo2 {
+public class StringDemo02 {
 	public static void main(String[] args) {
 		// 문자열 -> char배열
 		String str = "Hello Java";

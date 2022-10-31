@@ -3,7 +3,7 @@ package exam20;
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
-public class StringDemo {
+public class StringDemo01 {
 	public static void main(String[] args) {
 		
 		// 문자열 -> 바이트배열

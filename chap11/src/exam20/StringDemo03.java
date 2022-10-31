@@ -1,6 +1,6 @@
 package exam20;
 
-public class StringDemo3 {
+public class StringDemo03 {
 	public static void main(String[] args) {
 		String str = "가나다라마바사";
 		
