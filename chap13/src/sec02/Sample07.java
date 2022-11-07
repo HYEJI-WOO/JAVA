@@ -15,16 +15,17 @@ public class Sample07 {
 		
 		// 반복자
 		Iterator<String> it = list.iterator();
-		// while문을 통한 반복
-		while(it.hasNext()) { // 반복할 다음 요소가 있다면
-			System.out.println(it.next()); // 다음요소 출력
-		}
+		System.out.println(it.next());
+		System.out.println(it.hasNext());
+		System.out.println(it.next());
+		System.out.println(it.hasNext());
+		System.out.println(it.next());
+		System.out.println(it.hasNext());
+		System.out.println(it.next());
+		System.out.println(it.hasNext());
+		System.out.println(it.next());
+		System.out.println(it.hasNext());
 		
-		// 1회 반복을 수행한 반복자 객체는 더 이상 반복되지 않는다.
-		while(it.hasNext()) {
-			System.out.println(it.next());
-			System.out.println("실행되지 않는다. ");
-		}
 		
 	}
 
